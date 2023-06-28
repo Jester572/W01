@@ -9,6 +9,10 @@ connectDB;
 const port = 3000
 
 app.use(bodyParser.json())
+app.use((req, res, next) => {
+    res.setHeader('Access-Control-Allow-Origin', '*');
+    next();
+})
 app.use('/', require('./routes/contacts'));
 
 app.listen(process.env.port || port);
