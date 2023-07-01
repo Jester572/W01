@@ -13,3 +13,39 @@ GET http://localhost:3000/644da1e51468211fa2b6ba32
 ###
 
 GET http://localhost:3000/644da24d1468211fa2b6ba35
+
+
+// Through Render
+###
+
+GET https://cse341-lesson-1-e5z6.onrender.com/
+
+###
+
+POST https://cse341-lesson-1-e5z6.onrender.com/
+Content-Type: application/json
+
+{
+    "first_name": "Josh",
+    "last_name": "g",
+    "email": "fakeEmail@email.com",
+    "fav_color": "red",
+    "birth_day": "June 24"
+}
+
+###
+
+PUT https://cse341-lesson-1-e5z6.onrender.com/649e96f9889f96228520d12d
+Content-Type: application/json
+
+{
+  "first_name": "Josh",
+  "last_name": "Gerald",
+  "email": "fakeEmail@email.com",
+  "fav_color": "Blue",
+  "birth_day": "June 24"
+}
+
+###
+
+DELETE https://cse341-lesson-1-e5z6.onrender.com/649f8e9b45b40439ba5ed50d
