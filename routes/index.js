@@ -1,5 +1,6 @@
-const express = require('express').Router();
-const lesson1Controller = require('../controllers/lesson1')
+const express = require('express');
+const routes = express.Router();
+const lesson1Controller = require('../controllers/lesson1');
 
 //LocalHost:3000/
 routes.get('/', lesson1Controller.jesseRoute);
