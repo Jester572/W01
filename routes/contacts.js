@@ -6,14 +6,14 @@ const contactsController = require('../controllers/contacts');
 
 routes.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocument));
 
-routes.get('/', contactsController.getContactList);
+routes.get('/contacts', contactsController.getContactList);
 
-routes.get('/:id', contactsController.getSingleContact);
+routes.get('/contacts/:id', contactsController.getSingleContact);
 
-routes.post('/', contactsController.addContact);
+routes.post('/contacts', contactsController.addContact);
 
-routes.put('/:id', contactsController.updateContact);
+routes.put('/contacts/:id', contactsController.updateContact);
 
-routes.delete('/:id', contactsController.deleteContact);
+routes.delete('/contacts/:id', contactsController.deleteContact);
 
 module.exports = routes;
