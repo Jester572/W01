@@ -5,7 +5,6 @@ let _db;
 
 async function main() {
     const uri = process.env.connection_string;
-    console.log(uri);
     const client = new MongoClient(uri);
     _db = client;
     try {
